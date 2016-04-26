@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<script>
+	function changeSearch(sname) {
+		document.getElementById('content').innerHTML = hash[sname]
+	}
+
+	var hash = [];
+	hash['cdj'] = '<link rel="search" type="application/opensearchdescription+xml" href="https://raw.githubusercontent.com/3ricG/OpenSearchPlugins/master/cdj.xml" title="CDJapan Search">';
+	hash['dcs'] = '<link rel="search" type="application/opensearchdescription+xml" href="https://raw.githubusercontent.com/3ricG/OpenSearchPlugins/master/discogs.xml" title="Discogs Search">';
+</script>
+<h2>Instructions</h2>
+
+Click one of the links below to change the link type on this page. <br />
+Once clicked, a green plus sign (+) should appear next to the search <br />
+icon on your Firefox search bar. Click this, and select <br />
+"Add [name of search provider]".<br />
+<br />
+Open Search Plugins:<br />
+<ul>
+<li><a onclick='changeSearch("cdj")' href=''>CDJapan Search</a></li>
+<li><a onclick='changeSearch("dcs")' href=''>Discogs Search</a></li>
+</ul>
+<div id="content"></div>
+</html>
