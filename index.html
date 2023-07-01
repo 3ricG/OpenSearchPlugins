@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<meta http-equiv='cache-control' content='no-cache'> 
+<meta http-equiv='expires' content='0'> 
+<meta http-equiv='pragma' content='no-cache'>
 <script>
 	function changeSearch(sname) {
 		document.getElementById('content').innerHTML = hash[sname]
@@ -8,6 +11,7 @@
 	var hash = [];
 	hash['cdj'] = '<link rel="search" type="application/opensearchdescription+xml" href="https://raw.githubusercontent.com/3ricG/OpenSearchPlugins/master/cdj.xml" title="CDJapan Search">';
 	hash['dcs'] = '<link rel="search" type="application/opensearchdescription+xml" href="https://raw.githubusercontent.com/3ricG/OpenSearchPlugins/master/discogs.xml" title="Discogs Search">';
+	hash['wbm'] = '<link rel="search" type="application/opensearchdescription+xml" href="https://raw.githubusercontent.com/3ricG/OpenSearchPlugins/master/wbm.xml" title="WaybackMachine Search">';
 </script>
 <h2>Instructions</h2>
 
@@ -20,6 +24,7 @@ Open Search Plugins:<br />
 <ul>
 <li><a onclick='changeSearch("cdj")' href=''>CDJapan Search</a></li>
 <li><a onclick='changeSearch("dcs")' href=''>Discogs Search</a></li>
+<li><a onclick='changeSearch("wbm")' href=''>WaybackMachine Search</a></li>
 </ul>
 <div id="content"></div>
 </html>
